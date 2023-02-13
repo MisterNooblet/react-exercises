@@ -1,0 +1,27 @@
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: goldenrod;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  width: 100%;
+  height: 100px;
+}
+.card-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-description {
+  text-align: center;
+}
+
+.card-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: blueviolet;
+}

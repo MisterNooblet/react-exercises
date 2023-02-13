@@ -1,0 +1,21 @@
+.balloon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.purple {
+  background-color: purple;
+}

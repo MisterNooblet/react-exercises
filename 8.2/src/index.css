@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: darkblue;
+}
+
+.header {
+  color: green;
+  text-align: center;
+}
+.cardcontainer {
+  display: flex;
+  width: 90vw;
+  margin: auto;
+  justify-content: space-between;
+}
+.card img {
+  width: 20vw;
+}
+.card {
+  background-color: orange;
+  border-radius: 10px;
+}
+.orderbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.orders {
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+}
+.toppingCard {
+  display: flex;
+  width: 10vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  border-radius: 15px;
+}
+.toppingCard img {
+  border-radius: 50px;
+  object-fit: cover;
+  height: 10vh;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}

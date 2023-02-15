@@ -1,0 +1,10 @@
+.box3 {
+  background-color: pink;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}

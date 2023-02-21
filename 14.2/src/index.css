@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid black;
+  width: 20vw;
+  height: auto;
+}
+.card img {
+  width: fit-content;
+  height: fit-content;
+  object-fit: contain;
+}
+.card h1 {
+  display: inline;
+}
+.cardbox {
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -4,16 +4,20 @@ const API = {
     users: axios.create({
         baseURL: 'https://63f6079659c944921f6b8e39.mockapi.io/users'
     }),
+
     posts: axios.create({
         baseURL: 'https://63f6079659c944921f6b8e39.mockapi.io/posts'
     }),
+
     register(user) {
         this.users.post('/', user)
     },
+
     async addPost(content) {
         const response = await this.posts.post('/', content)
         return response
     },
+
     async deletePosts() {
         const allPosts = await this.getPosts()
         allPosts.forEach(element => {
@@ -21,6 +25,7 @@ const API = {
 
         })
     },
+
     async getPosts() {
         try {
             const response = await this.posts.get('/')
@@ -29,6 +34,7 @@ const API = {
 
         }
     },
+
     async userUnique(user) {
         try {
             const response = await this.users.get('/', {
@@ -47,6 +53,7 @@ const API = {
 
         }
     },
+
     async userCanlog(user, password) {
         try {
             const response = await this.users.get('/', {

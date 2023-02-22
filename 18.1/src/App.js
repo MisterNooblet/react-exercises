@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import Header from "./components/Header";
 import Login from "./Pages/Login";
 import Home from "./Pages/Home";
@@ -15,6 +16,7 @@ import NoPermissions from "./Pages/NoPermissions";
 function App() {
   const [isLogged, setIsLogged] = useState(false)
   const [isAdmin, setIsAdmin] = useState(false)
+
   const router = createBrowserRouter([
     {
       path: '/',
@@ -26,6 +28,7 @@ function App() {
       ]
     }
   ])
+
   return (
     <RouterProvider router={router} />
   );

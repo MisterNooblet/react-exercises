@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #000000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f6292;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+}
+.inputfield {
+  margin-top: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.inputfield input {
+  padding: 1vh 0;
+  width: 30vw;
+}
+.inputfield button {
+  padding: 1vh 0;
+}
+.todo_card {
+  color: black;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 2vh auto;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  padding: 0.4vh 0;
+}
+.todo_card * {
+  margin: 0 1vw;
+}
+.task_done {
+  background-color: #16ff00;
+}
+
+.task_pending {
+  background-color: #ffed00;
+}
+.todo_card button {
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  background-color: #0f629262;
+  color: white;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.todo_card button:hover {
+  background-color: #0f6292;
+}
